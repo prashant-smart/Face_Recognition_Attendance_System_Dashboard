@@ -18,7 +18,7 @@ class Face_Recognition_System:
 
         #First Image
         img = Image.open(r"images\3.jfif")
-        img = img.resize((510,130),Image.ANTIALIAS) #Image.ANTIALIAS convert the image from high level to low level.
+        img = img.resize((510,130),Image.LANCZOS) #Image.LANCZOS convert the image from high level to low level.
         self.photoimg = ImageTk.PhotoImage(img) #one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root,image= self.photoimg)
@@ -26,7 +26,7 @@ class Face_Recognition_System:
 
         # Second Image
         img1 = Image.open(r"images\4.jfif")
-        img1 = img1.resize((510, 130), Image.ANTIALIAS)
+        img1 = img1.resize((510, 130), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
 
         f_lab2 = Label(self.root, image=self.photoimg1)
@@ -34,7 +34,7 @@ class Face_Recognition_System:
 
         # Third Image
         img2 = Image.open(r"images\6.jfif")
-        img2 = img2.resize((510, 130), Image.ANTIALIAS)
+        img2 = img2.resize((510, 130), Image.LANCZOS)
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
         f_lab3 = Label(self.root, image=self.photoimg2)
@@ -42,7 +42,7 @@ class Face_Recognition_System:
 
         # Background Image
         img3 = Image.open(r"images\background2.jfif")
-        img3 = img3.resize((1530, 660), Image.ANTIALIAS)
+        img3 = img3.resize((1530, 660), Image.LANCZOS)
         self.photoimg3 = ImageTk.PhotoImage(img3)
 
         bg_img = Label(self.root, image=self.photoimg3)
@@ -54,7 +54,7 @@ class Face_Recognition_System:
 
         #Student Button
         img4 = Image.open(r"images\7.jfif")
-        img4 = img4.resize((220, 220), Image.ANTIALIAS)
+        img4 = img4.resize((220, 220), Image.LANCZOS)
         self.photoimg4 = ImageTk.PhotoImage(img4)
 
         b1 = Button(bg_img,image=self.photoimg4,command=self.student_details,cursor="hand2")
@@ -65,7 +65,7 @@ class Face_Recognition_System:
 
         # Detect Face Button
         img5 = Image.open(r"images\5.jfif")
-        img5 = img5.resize((220, 220), Image.ANTIALIAS)
+        img5 = img5.resize((220, 220), Image.LANCZOS)
         self.photoimg5 = ImageTk.PhotoImage(img5)
 
         b1 = Button(bg_img, image=self.photoimg5, cursor="hand2",command=self.face_data)
@@ -77,7 +77,7 @@ class Face_Recognition_System:
 
         # Attendance Face Button
         img6 = Image.open(r"images\9.jfif")
-        img6 = img6.resize((220, 220), Image.ANTIALIAS)
+        img6 = img6.resize((220, 220), Image.LANCZOS)
         self.photoimg6 = ImageTk.PhotoImage(img6)
 
         b1 = Button(bg_img, image=self.photoimg6, cursor="hand2",command=self.attendance_data)
@@ -89,7 +89,7 @@ class Face_Recognition_System:
 
         # Help Face Button
         img7 = Image.open(r"images\11.jfif")
-        img7 = img7.resize((220, 220), Image.ANTIALIAS)
+        img7 = img7.resize((220, 220), Image.LANCZOS)
         self.photoimg7 = ImageTk.PhotoImage(img7)
 
         b1 = Button(bg_img, image=self.photoimg7, cursor="hand2",command=self.help_data)
@@ -101,7 +101,7 @@ class Face_Recognition_System:
 
         # Train Face Button
         img8 = Image.open(r"images\8.jfif")
-        img8 = img8.resize((220, 220), Image.ANTIALIAS)
+        img8 = img8.resize((220, 220), Image.LANCZOS)
         self.photoimg8 = ImageTk.PhotoImage(img8)
 
         b1 = Button(bg_img, image=self.photoimg8, cursor="hand2",command=self.train_data)
@@ -113,7 +113,7 @@ class Face_Recognition_System:
 
         # Photos Face Button
         img9 = Image.open(r"images\12.jfif")
-        img9 = img9.resize((220, 220), Image.ANTIALIAS)
+        img9 = img9.resize((220, 220), Image.LANCZOS)
         self.photoimg9 = ImageTk.PhotoImage(img9)
 
         b1 = Button(bg_img, image=self.photoimg9, cursor="hand2",command=self.open_img)
@@ -125,7 +125,7 @@ class Face_Recognition_System:
 
         # Developer Button
         img10 = Image.open(r"images\13.png")
-        img10 = img10.resize((220, 220), Image.ANTIALIAS)
+        img10 = img10.resize((220, 220), Image.LANCZOS)
         self.photoimg10 = ImageTk.PhotoImage(img10)
 
         b1 = Button(bg_img, image=self.photoimg10, cursor="hand2",command=self.developer_data)
@@ -137,7 +137,7 @@ class Face_Recognition_System:
 
         # Exit Button
         img11 = Image.open(r"images\14.png")
-        img11 = img11.resize((220, 220), Image.ANTIALIAS)
+        img11 = img11.resize((220, 220), Image.LANCZOS)
         self.photoimg11 = ImageTk.PhotoImage(img11)
 
         b1 = Button(bg_img, image=self.photoimg11, cursor="hand2",command=self.iExit)

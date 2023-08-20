@@ -19,7 +19,7 @@ class Train:
         #Make Top Images
         # First Image
         img_top = Image.open(r"images\3.jfif")
-        img_top = img_top.resize((510, 325), Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_top = img_top.resize((510, 325), Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_top = ImageTk.PhotoImage(img_top)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root, image=self.photoimg_top)
@@ -27,7 +27,7 @@ class Train:
 
         # Second Image
         img1_top = Image.open(r"images\4.jfif")
-        img1_top = img1_top.resize((510, 325), Image.ANTIALIAS)
+        img1_top = img1_top.resize((510, 325), Image.LANCZOS)
         self.photoimg1_top = ImageTk.PhotoImage(img1_top)
 
         f_lab2 = Label(self.root, image=self.photoimg1_top)
@@ -35,7 +35,7 @@ class Train:
 
         # Third Image
         img2_top = Image.open(r"images\6.jfif")
-        img2_top = img2_top.resize((510, 325), Image.ANTIALIAS)
+        img2_top = img2_top.resize((510, 325), Image.LANCZOS)
         self.photoimg2_top = ImageTk.PhotoImage(img2_top)
 
         f_lab3 = Label(self.root, image=self.photoimg2_top)
@@ -48,7 +48,7 @@ class Train:
         #Bottom Image
         #First Image
         img_bottom = Image.open(r"images\12.jfif")
-        img_bottom = img_bottom.resize((510, 325),Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_bottom = img_bottom.resize((510, 325),Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_bottom = ImageTk.PhotoImage(img_bottom)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab4 = Label(self.root, image=self.photoimg_bottom)
@@ -56,7 +56,7 @@ class Train:
 
         #Second_Image
         img_bottom1 = Image.open(r"images\12.jfif")
-        img_bottom1 = img_bottom1.resize((510, 325),Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_bottom1 = img_bottom1.resize((510, 325),Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_bottom1 = ImageTk.PhotoImage(img_bottom1)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab5 = Label(self.root, image=self.photoimg_bottom1)
@@ -64,7 +64,7 @@ class Train:
 
         #Third Image
         img_bottom2 = Image.open(r"images\12.jfif")
-        img_bottom2 = img_bottom2.resize((510, 325),Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_bottom2 = img_bottom2.resize((510, 325),Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_bottom2 = ImageTk.PhotoImage(img_bottom2)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab6 = Label(self.root, image=self.photoimg_bottom2)

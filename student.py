@@ -29,7 +29,7 @@ class Student:
 
         # First Image
         img = Image.open(r"images\student1.jfif")
-        img = img.resize((510, 130), Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img = img.resize((510, 130), Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg = ImageTk.PhotoImage(img)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root, image=self.photoimg)
@@ -37,7 +37,7 @@ class Student:
 
         # Second Image
         img1 = Image.open(r"images\student2.jfif")
-        img1 = img1.resize((510, 130), Image.ANTIALIAS)
+        img1 = img1.resize((510, 130), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
 
         f_lab2 = Label(self.root, image=self.photoimg1)
@@ -45,7 +45,7 @@ class Student:
 
         # Third Image
         img2 = Image.open(r"images\4.jfif")
-        img2 = img2.resize((510, 130), Image.ANTIALIAS)
+        img2 = img2.resize((510, 130), Image.LANCZOS)
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
         f_lab3 = Label(self.root, image=self.photoimg2)
@@ -53,7 +53,7 @@ class Student:
 
         # Background Image
         img3 = Image.open(r"images\background2.jfif")
-        img3 = img3.resize((1530, 660), Image.ANTIALIAS)
+        img3 = img3.resize((1530, 660), Image.LANCZOS)
         self.photoimg3 = ImageTk.PhotoImage(img3)
 
         bg_img = Label(self.root, image=self.photoimg3)
@@ -72,7 +72,7 @@ class Student:
         Left_frame.place(x=10,y=10,width=730,height=580)
 
         img_left = Image.open(r"images\attendance.jfif")
-        img_left = img_left.resize((720, 130), Image.ANTIALIAS)
+        img_left = img_left.resize((720, 130), Image.LANCZOS)
         self.photoimg_left = ImageTk.PhotoImage(img_left)
 
         f_lab1 = Label(Left_frame, image=self.photoimg_left)
@@ -246,7 +246,7 @@ class Student:
         Right_frame.place(x=750, y=10, width=720, height=580)
 
         img_right = Image.open(r"images\attendance.jfif")
-        img_right = img_right.resize((710, 130), Image.ANTIALIAS)
+        img_right = img_right.resize((710, 130), Image.LANCZOS)
         self.photoimg_right = ImageTk.PhotoImage(img_left)
 
         f_lab1 = Label(Right_frame, image=self.photoimg_right)

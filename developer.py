@@ -19,7 +19,7 @@ class Developer:
         #Make Top Images
         # First Image
         img_top = Image.open(r"images\background3.jfif")
-        img_top = img_top.resize((1530, 735), Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_top = img_top.resize((1530, 735), Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_top = ImageTk.PhotoImage(img_top)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root, image=self.photoimg_top)
@@ -33,20 +33,8 @@ class Developer:
         title_lb2 = Label(main_frame, text="CREDITS:-",font=("times new roman", 25, "bold"), bg="white", fg="black")
         title_lb2.place(x=0, y=0, width=550, height=55)
         
-        title_lb3 = Label(main_frame, text="AAYUSH",font=("times new roman", 18, "bold"), bg="white", fg="red")
-        title_lb3.place(x=20, y=60,height=40) 
-        
         title_lb4 = Label(main_frame, text="PRASHANT KUMAR YADAV",font=("times new roman", 18, "bold"), bg="white", fg="red")
         title_lb4.place(x=20, y=110,height=40) 
-        
-        title_lb5 = Label(main_frame, text="SWATI SINGH",font=("times new roman", 18, "bold"), bg="white", fg="red")
-        title_lb5.place(x=20, y=160,height=40) 
-        
-        title_lb6 = Label(main_frame, text="SAGAR GIRI",font=("times new roman", 18, "bold"), bg="white", fg="red")
-        title_lb6.place(x=20, y=210,height=40) 
-        
-        title_lb7 = Label(main_frame, text="SAHIL GUPTA",font=("times new roman", 18, "bold"), bg="white", fg="red")
-        title_lb7.place(x=20, y=260,height=40) 
         
         
 if __name__ == "__main__":

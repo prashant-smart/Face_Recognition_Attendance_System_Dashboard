@@ -22,7 +22,7 @@ class Face_Recognition:
         #Set images
         #First Image
         img_top = Image.open(r"images\17.jfif")
-        img_top = img_top.resize((650, 700), Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_top = img_top.resize((650, 700), Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_top = ImageTk.PhotoImage(img_top)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root, image=self.photoimg_top)
@@ -30,7 +30,7 @@ class Face_Recognition:
         
         #Second Image
         img_bottom = Image.open(r"images\16.jpg")
-        img_bottom = img_bottom.resize((950, 700),Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img_bottom = img_bottom.resize((950, 700),Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg_bottom = ImageTk.PhotoImage(img_bottom)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root, image=self.photoimg_bottom)
@@ -104,6 +104,7 @@ class Face_Recognition:
             return img
         
         faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+        print(dir (cv2.face)) 
         clf = cv2.face.LBPHFaceRecognizer_create()
         clf.read("classifier.xml")
         

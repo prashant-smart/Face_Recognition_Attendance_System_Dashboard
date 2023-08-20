@@ -26,7 +26,7 @@ class Attendance:
         
         # First Image
         img = Image.open(r"images\Student-Attendance-Automation-1024x538.png")
-        img = img.resize((800, 200), Image.ANTIALIAS)  # Image.ANTIALIAS convert the image from high level to low level.
+        img = img.resize((800, 200), Image.LANCZOS)  # Image.LANCZOS convert the image from high level to low level.
         self.photoimg = ImageTk.PhotoImage(img)  # one of the built-in methods which has been used to add the user-defined images in the application.
 
         f_lab1 = Label(self.root, image=self.photoimg)
@@ -34,7 +34,7 @@ class Attendance:
 
         # Second Image
         img1 = Image.open(r"images\student2.jfif")
-        img1 = img1.resize((800, 200), Image.ANTIALIAS)
+        img1 = img1.resize((800, 200), Image.LANCZOS)
         self.photoimg1 = ImageTk.PhotoImage(img1)
 
         f_lab2 = Label(self.root, image=self.photoimg1)
@@ -42,7 +42,7 @@ class Attendance:
         
         # Background Image
         img3 = Image.open(r"images\background2.jfif")
-        img3 = img3.resize((1530, 660), Image.ANTIALIAS)
+        img3 = img3.resize((1530, 660), Image.LANCZOS)
         self.photoimg3 = ImageTk.PhotoImage(img3)
 
         bg_img = Label(self.root, image=self.photoimg3)
@@ -61,7 +61,7 @@ class Attendance:
         Left_frame.place(x=10,y=10,width=730,height=550)
 
         img_left = Image.open(r"images\attendance.jfif")
-        img_left = img_left.resize((720, 130), Image.ANTIALIAS)
+        img_left = img_left.resize((720, 130), Image.LANCZOS)
         self.photoimg_left = ImageTk.PhotoImage(img_left)
 
         f_lab1 = Label(Left_frame, image=self.photoimg_left)
